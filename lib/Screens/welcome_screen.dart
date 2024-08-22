@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import 'login_page.dart';
+
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
@@ -10,8 +12,13 @@ class WelcomeScreen extends StatelessWidget {
 
     void _logout() async {
       try {
+        print("Logout button pressed");
         await _auth.signOut();
-        Navigator.popUntil(context, (route) => route.isFirst);
+        Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => LoginPage()),
+              (route) => false,
+        );
       } catch (e) {
         print("Error during sign out: $e");
       }
