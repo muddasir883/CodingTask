@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "116907878347",
+    "project_id": "coding-task-20a95",
+    "storage_bucket": "coding-task-20a95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116907878347:android:64081a41faafb6c3de784e",
+        "android_client_info": {
+          "package_name": "com.example.coding_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNq6oI8_u5lBZSjWnxx8SdS-0qA6eC93I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
